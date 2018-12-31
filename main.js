@@ -49,11 +49,21 @@ let lachmannHousehold = {
                 name : 'Fnuller',
                 job : 'rabbit',
                 age : 1,
-                hobby : 'chew'
+                hobby : ['chew','jump','poop','pee']
             }
             
         }
 
     }
 };
+// console logging the lachmannHousehold showing the list of its memebers and the data of each of them
 console.log(lachmannHousehold);
+// accessing the name of the giant pet which is lula
+console.log(lachmannHousehold['family members'].pets.giant.name);
+// accessing the first hobby of the tiny pet
+console.log(lachmannHousehold['family members'].pets.tiny.hobby[0]);
+lachmannHousehold['family members'].pets.giant = {
+    appearance : 'super fat'
+}
+// adding a new key to the first object in pets(giant)
+console.log(lachmannHousehold['family members'].pets.giant);
