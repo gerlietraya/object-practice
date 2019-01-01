@@ -67,3 +67,13 @@ lachmannHousehold['family members'].pets.giant = {
 }
 // adding a new key to the first object in pets(giant)
 console.log(lachmannHousehold['family members'].pets.giant);
+//for...in
+//console log list of family members and names
+for(let familyMember in lachmannHousehold['family members']){
+    console.log(`${familyMember}: ${lachmannHousehold['family members'][familyMember].name}`)
+  
+}
+//console.log family member age
+for(let familyMember in lachmannHousehold['family members']){
+    console.log(`${familyMember}: ${lachmannHousehold['family members'][familyMember].age}`)
+}
